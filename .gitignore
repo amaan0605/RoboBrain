@@ -1,4 +1,4 @@
-/lib/services/api/apiKeys/
+lib/services/api/apiKeys/
 
 # Miscellaneous
 *.class
