@@ -25,12 +25,6 @@ class _ChatScreenState extends State<ChatScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        // actions: [
-        //   CircleAvatar(
-        //       backgroundImage:
-        //           AssetImage('assets/avatars/256_${widget.number + 1}.png')),
-        //   const SizedBox(width: 15),
-        // ],
         elevation: 0,
         title: const Text('RoboBrain'),
         centerTitle: true,

@@ -79,7 +79,6 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
           ),
-
           Expanded(
             child: Column(
               children: [
@@ -138,8 +137,10 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
           ),
-
-          //TextBox
+          const Text(
+            "Created by Amanullah",
+          ),
+          const SizedBox(height: 20.0)
         ]),
       ),
     );

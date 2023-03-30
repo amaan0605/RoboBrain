@@ -1,6 +1,7 @@
 import 'package:ai_magic/utils/constants.dart';
 import 'package:flutter/material.dart';
 import '../models/chat_model.dart';
+import 'package:animated_text_kit/animated_text_kit.dart';
 
 class ChatScreenWidget extends StatelessWidget {
   const ChatScreenWidget(
@@ -65,13 +66,21 @@ class ChatScreenWidget extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 4),
-                Text(
-                  message,
-                  style: const TextStyle(
-                    color: backgroundColor,
-                    fontSize: 16,
-                  ),
-                ),
+                AnimatedTextKit(
+                    totalRepeatCount: 0,
+                    displayFullTextOnTap: true,
+                    isRepeatingAnimation: false,
+                    repeatForever: false,
+                    animatedTexts: [
+                      TypewriterAnimatedText(
+                        message,
+                        speed: const Duration(milliseconds: 10),
+                        textStyle: const TextStyle(
+                          color: backgroundColor,
+                          fontSize: 16,
+                        ),
+                      ),
+                    ])
               ],
             ),
           ),
