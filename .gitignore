@@ -1,4 +1,4 @@
-ai_magic/lib/services/api/apiKeys/api_key.dart
+lib/services/api/apiKeys/api_key.dart
 
 # Miscellaneous
 *.class
